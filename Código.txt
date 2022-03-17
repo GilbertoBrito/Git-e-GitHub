@@ -1,0 +1,28 @@
+Algoritmo "Torneio de Fultebol"
+//O programa deve ler o nome de 03 times informado pelo usuário, e realizar toda
+//as possíveis combinações de jogos dos três times, sem que tenha repetições de
+//jogos com o mesmo time. Ex: Brasil x Brasil.
+Var
+ Time: vetor [1..3] de Caractere
+ Cont, ToT, Aux: Inteiro
+Inicio
+ Para Cont <- 1 ate 3 faca
+      Escreva ("Informe o nome do ", Cont, "º time: ")
+      Leia (Time[Cont])
+ FimPara
+
+ Para Cont <- 1 ate 2 faca
+      Para Tot <- Cont+1 ate 3 faca
+           Se (Time[Cont] <> Time[ToT]) entao
+              Aux <- Time[Cont]
+              Time[Cont] <- Time[ToT]
+              Time[ToT] <- Aux
+           FimSe
+      FimPara
+ FimPara
+ 
+ LimpaTela
+ Para Cont <- 1 ate 3 Faca
+      Escreval (Time[T]:10 "[]"  "x" "[]", Time[T])
+
+Fimalgoritmo
