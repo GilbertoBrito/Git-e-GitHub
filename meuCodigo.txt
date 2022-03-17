@@ -1,2 +1,2 @@
-Óla meu nome é Gilberto, sstou testando o Git e GitHub. 
+Óla meu nome é Gilberto Brito, sstou testando o Git e GitHub. 
 A ideia é fazer um tutorial de uso do Git.
